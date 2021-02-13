@@ -1,0 +1,91 @@
+body {
+	text-align: center;
+	background-color: #000;
+	-ms-overflow-style: none;
+  	scrollbar-width: none;
+	}
+body::-webkit-scrollbar {
+  display: none;
+	}
+td {
+	width: 100px;
+	vertical-align: top;
+	}
+h3 {
+	background-color: #6f0101;
+}
+button {
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+.holder {
+	width: 600px;
+	margin: 0 auto;
+	text-align: left;
+	}
+.example {
+	width: 75px;
+	height: 75px;
+	display: block;
+	margin: 0 auto;
+	}
+#centermain {
+	width: 600px;
+    position: absolute;
+	left: 50%;
+    margin-left: -300px;
+	padding: 15px;
+	background-color: #8b0000;
+	border: 1px solid #6b5429;
+    z-index: 2;
+    margin-bottom: 200px;
+}
+#product {
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-color: white;
+}
+#credits {
+	width: 100%;
+	position: fixed;
+    z-index: 1;
+	top: 100%;
+	left: 0;
+	background-color: #8b000066;
+	margin-top: -40px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 8pt;
+	height: 30px; 
+}
+#getWidth {
+	display: inline-block;
+	}
+#product {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    }
+.example {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+}
+#myCanvas {
+    width: 100px;
+    height: 100px;
+}
+#vertical {
+    background-image: linear-gradient(90deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+}
+#horizontal {
+    background-image: linear-gradient(0deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+}
+#diagonalUp {
+    background-image: linear-gradient(135deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+}
+#diagonalDown {
+    background-image: linear-gradient(45deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+}

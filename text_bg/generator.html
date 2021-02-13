@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title></title>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <link rel="stylesheet" type="text/css" href="../fonts/fonts-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../genstyle.css">
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <meta charset="UTF-8">
+        <style>
+            canvas {
+                display: block;
+                margin: 20 auto;
+            }
+            #getWidth {
+                display: inline-block;
+                visibility: hidden;
+                font: 30px Arial;
+            }
+            .holder td p {
+                width: 70px;
+                float: right;
+            }
+            .folder td input[type="radio"] {
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="envelope">
+            <div id="tabs">
+                <ul>
+                    <li>
+                        Backgrounds
+                    </li>
+                    <li>
+                        <a href="">
+                            Generators
+                        </a>
+                    </li>
+                    <li class="active">
+                        Text Background Generator
+                    </li>
+                </ul>
+            </div>
+            <div id="generator">
+                <canvas id="myCanvas" style="border:1px solid #000;">
+            Your browser does not support the canvas element.
+                </canvas>
+                <h3>
+                    Step one: Text / Font Size, Styling
+                </h3>
+                <div class="holder">
+                    Message: 
+                    <input type="text" value="♡" id="setText">
+                    <br>
+                    Text Shadow:
+                    <select id="shadow">
+                        <option value="none">None</option>
+                        <option value="crisp">Crisp</option>
+                        <option value="soft" selected="selected">Soft</option>
+                    </select>
+                    <br>
+                    Font Size:
+                    <input type="text" value="30" size="8" id="setFontSize"> pt
+                </div>
+                    <h3>
+                        Step two: Dimensions
+                    </h3>
+                <div class="holder">
+                     Width:
+                    <input type="text" value="80" size="8" id="setWidth"> Pixels
+                    <br>
+                    Line height: 
+                    <input type="text" value="20" size="8" id="setHeight"> Pixels
+                    
+                    <div id="getWidth">                    
+                    </div>
+                </div>
+                <h3>
+                    Step three: Colors
+                </h3>
+                <div class="holder">
+                    Shadow Color: 
+                    <input type="color" id="shadowColor" value="#000000">
+                    <br>
+                    Background Color: 
+                    <input type="color" id="bgColor" value="#8B0300">
+                    <br>
+                    Text Color: 
+                    <input type="color" id="textColor" value="#b50300">
+                </div>
+                <h3>
+                    Step four: Font
+                </h3>
+                <div class="holder">
+                    <table width="500px">
+                        <tr>
+                            <td>
+                                <input type="radio" name="font" value="Times"> 
+                                <p style="font: 12pt times">
+                                    Times
+                                </p>
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="Arial">
+                                <p style="font: 12pt Arial">
+                                    Arial
+                                </p>
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="courier" checked="checked">
+                                <p style="font: 12pt Courier">
+                                    Courier
+                                </p>
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="Brush Script MT">
+                                <p style="font: 12pt Brush Script MT">
+                                    Brush Script MT
+                                </p> 
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="Impact"> 
+                                <p style="font: 12pt Impact">
+                                    Impact
+                                </p> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="font" value="Rockwell">
+                                <p style="font: 12pt Rockwell">
+                                    Rockwell
+                                </p> 
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="Baskerville">
+                                <p style="font: 12pt Baskerville">
+                                    Baskerville
+                                </p> 
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="Papyrus">
+                                <p style="font: 12pt Papyrus">
+                                    Papyrus
+                                </p> 
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="first_order_lightlight">
+                                <p style="font: 12pt first_order_lightlight">
+                                    First Order
+                                </p> 
+                            </td>
+                            <td>
+                                <input type="radio" name="font" value="FLETCHER">
+                                <p style="font: 12pt FLETCHER">
+                                    Freak
+                                </p> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Step five: Save it</h3>
+                <div class="holder">
+                    <input type="button" id="submit" value=" Save it!">
+                </div>
+                <i>
+                    To preview the texture, hover over the preview!
+                </i>
+            </div>
+        </div>
+        <script type="text/javascript" src="textgen.js">
+        </script>
+    </body>
+</html>

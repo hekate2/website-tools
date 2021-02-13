@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../genstyle.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/fonts-stylesheet.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="stripegen.js"></script>
+        <style>
+            .example {
+                width: 75px;
+                height: 75px;
+                display: block;
+                margin: 0 auto;
+                border: 1px solid #000;
+                box-shadow: 0px 0px 5px #17578a;
+            }
+            #vertical {
+                background-image: linear-gradient(90deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+            }
+            #horizontal {
+                background-image: linear-gradient(0deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+            }
+            #diagonalUp {
+                background-image: linear-gradient(135deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+            }
+            #diagonalDown {
+                background-image: linear-gradient(45deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="envelope">
+            <div id="tabs">
+				<ul>
+					<li>
+						Backgrounds
+					</li>
+					<li>
+						Generators
+					</li>
+					<li class="active">
+						Stripe Texture Generator
+					</li>
+				</ul>
+			</div>
+            <div id="generator">
+                <h3 style="background-color: yellowgreen">
+                    Stripe Texture Generator
+                </h3>
+                <div class="holder" style="text-align: center">
+                    <canvas id="myCanvas" style="border:1px solid #000;" width="100" height="100">
+                        Your browser does not support the canvas element.
+                    </canvas>
+                </div>
+                <h3>
+                    Step 1: Stripe Direction
+                </h3>
+                <div class="holder">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="example" id="vertical">
+                                </div>
+                                <input type="radio" name="stripe" value="vertical" checked="checked">
+                                <p>
+                                    Vertical
+                                </p>
+                            </td>
+                            <td>
+                                <div class="example" id="horizontal">
+                                </div>
+                                <input type="radio" name="stripe" value="horizontal">
+                                <p>
+                                    Horizontal
+                                </p>
+                            </td>
+                            <td>
+                                <div class="example" id="diagonalUp">
+                                </div>
+                                <input type="radio" name="stripe" value="diagonalUp">
+                                <p>
+                                    Diagonal Up
+                                </p>
+                            </td>
+                            <td>
+                                <div class="example" id="diagonalDown">
+                                </div>
+                                <input type="radio" name="stripe" value="diagonalDown">
+                                <p>
+                                    Diagonal Down
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            <h3>
+                Step two: Number of Stripes
+            </h3>
+            <div class="holder">
+                Number of stripes: <input type="number" size="4" name="stripeSize" value="16" step="2">
+            </div>
+            <h3>
+                Step three: Stripe Color
+            </h3>
+            <div class="holder">
+                Stripe one color: <input type="color" value="#ffffff" name="stripeOneCol">
+                <br>
+                Stripe two color: <input type="color" value="#000000" name="stripeTwoCol">
+            </div>
+            <h3>
+                Step four: Save it!
+            </h3>
+            <div class="holder">
+                <input type="button" id="submit" value=" Save it!">
+            </div>
+                <i>
+                    To preview the texture, hover over the preview!
+                </i>
+            </div>
+        </div>
+    </body>
+</html>
