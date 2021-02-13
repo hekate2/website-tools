@@ -1,11 +1,11 @@
 <html>
     <head>
-        <title></title>
+        <title>Image Texture Generator</title>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <link rel="stylesheet" type="text/css" href="../fonts/fonts-stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="../genstyle.css">
-        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <link rel="stylesheet" type="text/css" href="../genstyle.css" />
+        <link rel="stylesheet" type="text/css" href="../fonts/fonts-stylesheet.css">
         <meta charset="UTF-8">
         <style>
             canvas {
@@ -28,6 +28,7 @@
     </head>
     <body>
         <div id="envelope">
+            <!-- TABS BEGIN -->
             <div id="tabs">
                 <ul>
                     <li>
@@ -43,9 +44,10 @@
                     </li>
                 </ul>
             </div>
+            <!-- TABS END/GENERATOR BEGINS -->
             <div id="generator">
                 <canvas id="myCanvas" style="border:1px solid #000;">
-            Your browser does not support the canvas element.
+                    Your browser does not support the canvas element.
                 </canvas>
                 <h3>
                     Step one: Text / Font Size, Styling
@@ -159,16 +161,16 @@
                                 </p> 
                             </td>
                         </tr>
-                    </table>
+                    </table> <!-- ADD MORE FONTS -->
                 </div>
                 <h3>Step five: Save it</h3>
                 <div class="holder">
                     <input type="button" id="submit" value=" Save it!">
                 </div>
-                <i>
-                    To preview the texture, hover over the preview!
-                </i>
+                <i>Hover over the generated image to preview the background</i>
+                <br>
             </div>
+            <!--GENERATOR ENDS-->
         </div>
         <script type="text/javascript" src="textgen.js">
         </script>
