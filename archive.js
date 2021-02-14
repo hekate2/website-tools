@@ -3,6 +3,7 @@ $(document).ready(function() {
     var counter = 0;
     
     function readTxt() {
+        console.log(counter);
         jQuery.get('beige.txt', function(data) {
         src_array = data.split("\n");
         setSrc();
@@ -19,7 +20,7 @@ $(document).ready(function() {
     
     readTxt();
     
-    $('#next').on('click', setSrc());
+    $('#next').on('click', readTxt());
     
     $('#previous').on('click', function() {
        if (counter == 0) {
