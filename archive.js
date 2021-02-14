@@ -9,7 +9,7 @@ $(document).ready(function() {
     
     function setSrc() {
         for (var i = 1; i < 28; i++) {
-            $('#' + i).attr('src', src_array[counter]);
+            $('"#' + i + '"').attr('src', src_array[counter]);
             counter += 1;
         }
     }
