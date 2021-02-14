@@ -3,7 +3,6 @@ $(document).ready(function() {
     var counter = 0;
     
     function readTxt() {
-        console.log(counter);
         jQuery.get('beige.txt', function(data) {
         src_array = data.split("\n");
         setSrc();
@@ -12,6 +11,7 @@ $(document).ready(function() {
     
     function setSrc() {
         for (var i = 1; i <= 28; i++) {
+            console.log(counter);
             $('#e' + i).attr('src', src_array[counter]);
             $('#e' + i).parent().next().text(src_array[counter].substr(src_array[counter].length - 12, src_array[counter].length));
             counter++;
