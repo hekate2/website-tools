@@ -1,7 +1,7 @@
 $(document).ready(function() {
+    var src_array = [];
     jQuery.get('beige.txt', function(data) {
-       alert(data);
-       //process text file line by line
-       $('.text').html(data.replace('n',''));
+        src_array = data.split("\n");
+        alert(src_array);
     });
 }); 
