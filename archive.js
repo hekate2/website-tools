@@ -20,10 +20,12 @@ $(document).ready(function() {
     
     readTxt();
     
-    $('#next').on('click', readTxt());
+    $('#next').on('click', function(){
+        readTxt();
+    });
     
     $('#previous').on('click', function() {
-       if (counter == 0) {
+       if (counter != 0) {
            counter -= 28;
            readTxt();
        } 
