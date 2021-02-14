@@ -4,16 +4,14 @@ $(document).ready(function() {
     
     jQuery.get('beige.txt', function(data) {
         src_array = data.split("\n");
-        for (var i = 0; i < 28; i++) {
-            alert(src_array[i]);
-        }
-        
     });
     
     function setSrc() {
+        
         for (var i = 1; i < 28; i++) {
-            $('#e' + i).attr('src', src_array[counter]);
-            counter += 1;
+            $('#e1').atte('src', src_array[i]);
+            $('#e' + i).attr('src', src_array[i]);
+            alert('#e' + i);
         }
     }
     setSrc();
