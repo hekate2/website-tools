@@ -4,6 +4,7 @@ $(document).ready(function() {
         times = data.split("\n");
     });
     
+    console.log(times);
     var counter = 0;
     function setSrc() {
         for (var i = 1; i < 28; i++) {
