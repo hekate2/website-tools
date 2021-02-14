@@ -1,16 +1,7 @@
 $(document).ready(function() {
-    var times = [];
-    $.get('beige.txt', function(data) {
-        times = data.split("\n");
+    jQuery.get('beige.txt', function(data) {
+       alert(data);
+       //process text file line by line
+       $('.text').html(data.replace('n',''));
     });
-    
-    console.log(times);
-    var counter = 0;
-    function setSrc() {
-        for (var i = 1; i < 28; i++) {
-            $('#' + i).attr('src', times[counter]);
-            counter++;
-        }
-    }
-    setSrc();
-});
+}); 
