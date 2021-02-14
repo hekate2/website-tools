@@ -12,7 +12,7 @@ $(document).ready(function() {
     function setSrc() {
         for (var i = 1; i <= 28; i++) {
             $('#e' + i).attr('src', src_array[i]);
-            alert(substring(src_array[i].length - 12, src_array[i].length));
+            alert(src_array[i].substr(src_array[i].length - 12, src_array[i].length));
             $('#e' + i).siblings('p').innerHTML(src_array[i].substr(src_array[i].length - 12, src_array[i].length));
         }
     }
