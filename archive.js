@@ -10,7 +10,7 @@ $(document).ready(function() {
     }
     
     function setSrc() {
-        for (var i = 1; i < 28; i++) {
+        for (var i = 1; i <= 28; i++) {
             $('#e1').attr('src', src_array[i]);
             $('#e' + i).attr('src', src_array[i]);
         }
