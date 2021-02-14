@@ -1,6 +1,15 @@
 $(document).ready(function() {
-    $.get("file://beige.txt", function(data){
-        $(".result").html(data);
-      alert("Load was performed.");
+    var times = [];
+    $.get('beige.txt', function(data) {
+        times = data.split("\n");
     });
+    
+    var counter = 0;
+    function setSrc() {
+        for (var i = 1; i < 28; i++) {
+            $('#' + i).attr('src', times[counter]);
+            counter++;
+        }
+    }
+    setSrc();
 });
