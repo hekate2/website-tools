@@ -6,7 +6,6 @@ $( document ).ready(function() {
   			var height = $('#height').val();
   			var gradient = $('input[name="grad"]:checked').siblings().css('background');
             
-            $('#envelope').draggable();
 		    // Method to make all background colors similar, then set the selected background
 		    function getBg() {
 		    	color = $('#color1').val();
@@ -77,9 +76,10 @@ $( document ).ready(function() {
 
 			$('#submit').on('click', function() {
 				html2canvas(document.querySelector("#product"), {
-					width: width - 2,
-			  		height: height - 2,
-			  		scrollY: -window.scrollY
+					width: width - 1,
+			  		height: height - 1,
+			  		scrollY: -window.scrollY - 1,
+                    scrollX: -window.scrollX - 1
 				}).then(canvas => {
                     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
                     var a = document.createElement('a');
