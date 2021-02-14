@@ -21,12 +21,14 @@ $(document).ready(function() {
     readTxt();
     
     $('#next').on('click', function(){
-        readTxt();
+        if (counter <= src_array.length) {
+         readTxt();   
+        }
     });
     
     $('#previous').on('click', function() {
        if (counter != 0) {
-           counter -= 28;
+           counter -= 56;
            readTxt();
        } 
     });
