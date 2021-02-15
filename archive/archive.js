@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var src_array = [];
     var counter = 0;
+    var hasBeenPrev = false;
     
     function readTxt() {
         jQuery.get('text_links/beige.txt', function(data) {
@@ -27,7 +28,7 @@ $(document).ready(function() {
     });
     
     $('#previous').on('click', function() {
-       if (counter != 0) {
+       if (counter >= 56) {
            counter -= 56;
            readTxt();
        } 
