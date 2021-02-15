@@ -2,9 +2,10 @@ $(document).ready(function() {
     var src_array = [];
     var counter = 0;
     var hasBeenPrev = false;
+    var color = $('.selected').attr('value');;
     
     function readTxt() {
-        jQuery.get('text_links/beige.txt', function(data) {
+        jQuery.get('text_links/' + color + '.txt', function(data) {
         src_array = data.split("\n");
         setSrc();
         });
@@ -19,8 +20,6 @@ $(document).ready(function() {
         }
     }
     
-    readTxt();
-    
     $('#next').on('click', function(){
         if (counter <= src_array.length) {
          readTxt();   
@@ -32,5 +31,18 @@ $(document).ready(function() {
            counter -= 56;
            readTxt();
        } 
+    });
+    
+    $('#chooser li').on('click', function() {
+        $('#chooser li').removeClass('selected');
+        $(this).addClass('selected');
+        $('#chooser').css('display', 'none');
+        $('#archive').css('display', 'block');
+        $('.active').addClass('dormant');
+        $('.active').next().addClass('active');
+        $('.active:first').removeClass('active');
+        
+        color = $('.selected').attr('value');
+        readTxt();
     });
 }); 
