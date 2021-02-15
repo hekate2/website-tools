@@ -3,7 +3,7 @@ $(document).ready(function() {
     var counter = 0;
     
     function readTxt() {
-        jQuery.get('beige.txt', function(data) {
+        jQuery.get('text_links/beige.txt', function(data) {
         src_array = data.split("\n");
         setSrc();
         });

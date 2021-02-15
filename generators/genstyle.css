@@ -19,7 +19,7 @@ td {
 	width: 100px;
 	vertical-align: top;
 	}
-button, input[type="file"], #submit {
+button, input[type="file"], #submit, input[type="button"] {
 	margin: 10px;
     font: 5pt 'quinquefiveregular';
     padding: 5px;
