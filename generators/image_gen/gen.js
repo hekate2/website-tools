@@ -55,6 +55,7 @@ $(document).ready(function() {
                         $('#myCanvas').attr('height', $("input[name='canHeight']").val());
                         drawImage();
                     });
+    
                     $('canvas').on('mouseover', function() {
                         $('body').css({'background-image':"url(" + canvas.toDataURL("image/png")+ ")" });
                     });

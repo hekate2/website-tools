@@ -31,7 +31,7 @@ $( document ).ready(function() {
 		    // Initialise the background
 		    getBg();
 
-		    // Initialise product height (first fencepost)
+		    // Initialise product height
 		    $('#product').css('width', width + 'px');
 		    $('#product').css('height', height + 'px');
 
