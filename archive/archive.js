@@ -15,7 +15,7 @@ $(document).ready(function() {
         for (var i = 1; i <= 28; i++) {
             console.log(counter);
             $('#e' + i).attr('src', src_array[counter]);
-            $('#e' + i).parent().next().text(src_array[counter].split('/')[5]);
+            $('#e' + i).parent().next().text(src_array[counter].split('/')[4]);
             counter++;
         }
     }
