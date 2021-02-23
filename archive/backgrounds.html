@@ -27,32 +27,32 @@
             #archive {
                 display: none;   
             }
-            #chooser {
-                text-align: center;
-            }
             #chooser ul {
                 list-style-type: none;
-                display: inline-block;
             }
             #chooser li {
                 margin: 10px;
                 font-size: 8pt;
                 width: 100px;
                 padding: 5px;
-                left: 50%;
+                display: inline-block;
+            }
+            #chooser img {
+                width: 100px;
             }
         </style>
     </head>
     <body>
         <div id="envelope">
-            
             <div id="tabs">
                 <ul id="tablist">
                     <li>
                         Backgrounds
                     </li>
                     <li class="active">
-                        Choose a color
+                        <a href="backgrounds.html">
+                            Choose a color
+                        </a>
                     </li>
                     <li>
                         Background Archive
@@ -63,29 +63,29 @@
                 <h3>Background Archives</h3>
                 <div id="chooser">
                     <ul>
-                        <li value="red" style="background-color: red">
-                            Red
+                        <li value="red">
+                            <img src="graphics/red.png"/>
                         </li>
-                        <li value="orange" style="background-color: orange">
-                            Orange
+                        <li value="orange">
+                            <img src="graphics/orange.png"/>
                         </li>
-                        <li value="yellow" style="background-color: yellow">
-                            Yellow
+                        <li value="yellow">
+                            <img src="graphics/yello.png"/>
                         </li>
-                        <li value="green" style="background-color: forestgreen">
-                            Green
+                        <li value="green">
+                            <img src="graphics/green.png"/>
                         </li>
-                        <li value="blue" style="background-color: blue">
-                            Blue
+                        <li value="blue">
+                            <img src="graphics/blue.png"/>
                         </li>
-                        <li value="purple" style="background-color: violet">
-                            Violet
+                        <li value="purple">
+                            <img src="graphics/purp.png"/>
                         </li>
-                        <li value="beige" class="selected" style="background-color: bisque">
-                            Beige
+                        <li value="beige" class="selected">
+                            <img src="graphics/brown.png"/>
                         </li>
-                        <li value="pink" style="background-color: pink">
-                            Pink
+                        <li value="pink">
+                            <img src="graphics/pink.png"/>
                         </li>
                     </ul>
                 </div>

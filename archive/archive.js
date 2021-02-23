@@ -45,4 +45,9 @@ $(document).ready(function() {
         color = $('.selected').attr('value');
         readTxt();
     });
+    
+    $('.dormant').on('click', function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+    });
 }); 
