@@ -6,6 +6,6 @@ $(document).ready(function() {
     
     // background remove
     $('.example').on('mouseleave', function() {
-        $('body').css('background', "#fff");
+        $('body').css('background', "#0c1321");
     })
 });

@@ -3,8 +3,8 @@ a {
     color: #fff;
 }
 body {
+    background-image: url("../graphics/background.jpg");
     text-align: center;
-	background: #fff;
 	-ms-overflow-style: none;
   	scrollbar-width: none;
     text-shadow: 1px 1px black;
@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 canvas {
-    box-shadow: 0px 0px 5px #17578a;
+    box-shadow: 0px 0px 5px #000;
 }
 td {
 	width: 100px;
@@ -24,7 +24,7 @@ button, input[type="file"], #submit, input[type="button"] {
     font: 5pt 'quinquefiveregular';
     padding: 5px;
     color: white;
-    background: linear-gradient(#b7dbfb, #269efb);
+    background: linear-gradient(#2c3953, #000);
     border: 1px solid #fff;
 }
 .example {
@@ -88,14 +88,14 @@ button, input[type="file"], #submit, input[type="button"] {
     padding: 2.5px;
 }
 #tabs li.active:after {
-    box-shadow: -2px 2px 0 #000;
+    box-shadow: -2px 2px 0 #2c3953;
 }
 #tabs li.active {
-    border-bottom-color: #000;
+    border-bottom-color: #2c3953;
     padding: 2.5px;
 }
 #tabs li.active:before {
-    box-shadow: 2px 2px 0 #000;
+    box-shadow: 2px 2px 0 #2c3953;
 }
 #tabs:after {
     position: absolute;
@@ -119,7 +119,7 @@ button, input[type="file"], #submit, input[type="button"] {
 #tabs li{
     border: 1px solid #000;
     border-bottom-color: #000;
-    background: linear-gradient(#5d0000, #000000);
+    background: linear-gradient(#455a82, #2c3953);
     display: inline-block;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -127,18 +127,18 @@ button, input[type="file"], #submit, input[type="button"] {
     z-index: 10;
 }
 #tabs li.active {
-    background: linear-gradient(#c10101, #000000);
+    background: linear-gradient(#5c729c, #2c3953);
     z-index: 30;
 }
 #tabs li:after {
     right: -6px;
     border-bottom-left-radius: 6px;
     border-width: 0 0 1px 1px;
-    box-shadow: -2px 2px 0 #000;
+    box-shadow: -2px 2px 0 #2c3953;
     left: 100%;
 }
 #tabs li:before {
-    box-shadow: 2px 2px 0 #000;
+    box-shadow: 2px 2px 0 #2c3953;
     border-bottom-right-radius: 6px;
     border-width: 0 1px 1px 0;
     left: -7px;
@@ -154,7 +154,7 @@ button, input[type="file"], #submit, input[type="button"] {
     background: blue;
     position: absolute;
     border-radius: 5px;
-    background: linear-gradient(#000000, #5d0000);
+    background: linear-gradient(#2c3953, #000000);;
     border: 1px solid #000;
     z-index: 20;
 }
@@ -170,7 +170,7 @@ input[type=number]{
     width: 50px;
 } 
 h3 {
-    background: linear-gradient(45deg, #ad0707, transparent);
+    background: linear-gradient(45deg, #4a556d, transparent);
 }
 table {
     font-size: 5pt;
@@ -187,5 +187,5 @@ input[type="radio"] {
     margin-top: 4px;
 }
 canvas, .example {
-    box-shadow: 0px 0px 5px #17578a;
+    box-shadow: 0px 0px 5px #000;
 }

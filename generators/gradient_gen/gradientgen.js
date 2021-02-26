@@ -71,7 +71,7 @@ $( document ).ready(function() {
 			})
 			// On mouse out
 			$('#product').on('mouseleave', function() {
-                $('body').css('background', "#fff");
+                $('body').css('background-image', "url('../../graphics/background.jpg')");
 			})
 
 			$('#submit').on('click', function() {
