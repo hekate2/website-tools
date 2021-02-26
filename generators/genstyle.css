@@ -88,14 +88,14 @@ button, input[type="file"], #submit, input[type="button"] {
     padding: 2.5px;
 }
 #tabs li.active:after {
-    box-shadow: -2px 2px 0 #85ccff;
+    box-shadow: -2px 2px 0 #000;
 }
 #tabs li.active {
-    border-bottom-color: #85ccff;
+    border-bottom-color: #000;
     padding: 2.5px;
 }
 #tabs li.active:before {
-    box-shadow: 2px 2px 0 #85ccff;
+    box-shadow: 2px 2px 0 #000;
 }
 #tabs:after {
     position: absolute;
@@ -103,7 +103,7 @@ button, input[type="file"], #submit, input[type="button"] {
     width: 100%;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid #4ea2de;
+    border-bottom: 1px solid #000;
     right: -6px;
 }
 #tabs li:before,
@@ -113,13 +113,13 @@ button, input[type="file"], #submit, input[type="button"] {
     width: 6px;
     height: 6px;
     content: " ";
-    border: 1px solid #4ea2de;
+    border: 1px solid #000;
     z-index: -1;
 }
 #tabs li{
-    border: 1px solid #4ea2de;
-    border-bottom-color: #85ccff;
-    background: linear-gradient(#d6f7ff, #4ea2de);
+    border: 1px solid #000;
+    border-bottom-color: #000;
+    background: linear-gradient(#5d0000, #000000);
     display: inline-block;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -127,18 +127,18 @@ button, input[type="file"], #submit, input[type="button"] {
     z-index: 10;
 }
 #tabs li.active {
-    background: linear-gradient(#ffffff, #85ccff);
+    background: linear-gradient(#c10101, #000000);
     z-index: 30;
 }
 #tabs li:after {
     right: -6px;
     border-bottom-left-radius: 6px;
     border-width: 0 0 1px 1px;
-    box-shadow: -2px 2px 0 #4ea2de;
+    box-shadow: -2px 2px 0 #000;
     left: 100%;
 }
 #tabs li:before {
-    box-shadow: 2px 2px 0 #4ea2de;
+    box-shadow: 2px 2px 0 #000;
     border-bottom-right-radius: 6px;
     border-width: 0 1px 1px 0;
     left: -7px;
@@ -154,8 +154,8 @@ button, input[type="file"], #submit, input[type="button"] {
     background: blue;
     position: absolute;
     border-radius: 5px;
-    background: linear-gradient(#85ccff, #22a3ff);
-    border: 1px solid #1c88e4;
+    background: linear-gradient(#000000, #5d0000);
+    border: 1px solid #000;
     z-index: 20;
 }
 .holder {
@@ -170,7 +170,7 @@ input[type=number]{
     width: 50px;
 } 
 h3 {
-    background: #FF9800;
+    background: linear-gradient(45deg, #ad0707, transparent);
 }
 table {
     font-size: 5pt;
