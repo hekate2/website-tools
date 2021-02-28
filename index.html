@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="generators/fonts/fonts-stylesheet.css" />
         <title>
-            Backgrounds - Directory
+            The Internet Graveyard
         </title>
         <style>
             body {
-                background: #000;
+                background-color: #000;
+                color: #fff;
+                font: 5pt 'quinquefiveregular';
+                text-shadow: 1px 1px black;
+                line-height: 2em;
+            }
+            #envelope {
+                width: 800px;
+                height: 500px;
+                position: absolute;
+                display: inline-block;
+                left: 50%;
+                top: 50%;
+                margin-left: -400px;
+                margin-top: -250px;
+            }
+            #navbar {
+                width: 150px;
+                float: left;
+            }
+            #content {
+                width: 628px;
+                height: 400px;
+                float: right;
+                padding: 10px;
+                border-radius: 5px;
+                background: linear-gradient(#192023, #8e9da0);
+            }
+            #content, #navbar li {
+                border: 1px solid #86898a;
+                box-shadow: inset #1e2628 0px 0px 10px;
+            }
+            #navbar li {
+                background: linear-gradient(#192023, #606b6d);
+                list-style: none;
+                border-right: none;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                padding: 3px;
+                margin: 5px 0 5px 5px;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
-        
+        <div id="envelope">
+            <div id="navbar">
+                <ul>
+                    <li>
+                        <a href="archive/backgrounds.html">
+                            Archives
+                        </a>
+                    </li>
+                    <li>
+                        <a href="generators/gendirect.html">
+                            Generators
+                        </a>
+                    </li>
+                    <li>
+                        Tutorials
+                    </li>
+                    <li>
+                        About/Contact
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
+                <h3>
+                    Latest News:
+                </h3>
+                <p>
+                    Welcome to the internet's graveyard- the hottest spot on the web for old graphics, html tutorials and general web 1.0 thingamagigs! Check out the <strong>archives</strong> for old graphics, the <strong>generators</strong> to make your own web-stuff, or the <strong>tutorials</strong> for some cool gadgets for your blog or website. Got ideas? My e-mail's in the <strong>about</strong> section.
+                </p>
+                
+            </div>
+        </div>
     </body>
 </html>
