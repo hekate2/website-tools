@@ -53,7 +53,6 @@ $(document).ready(function() {
     $('.example img').on('click', function() {
         var link = document.createElement('a');
         link.href = $(this).attr('src'); 
-        link.download = 'MyToy.jpeg';
-        link.click();
+        window.open(link);
     })
 }); 
