@@ -67,3 +67,78 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'abandoned_bitplaneregular';
+    src: url('abandone-webfont.woff2') format('woff2'),
+         url('abandone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'foxscriptnormal';
+    src: url('foxsn___-webfont.woff2') format('woff2'),
+         url('foxsn___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'frozen_dog_treatsregular';
+    src: url('frozen-webfont.woff2') format('woff2'),
+         url('frozen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fully_completely_brkregular';
+    src: url('fullcomp-webfont.woff2') format('woff2'),
+         url('fullcomp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_technodelightbold_italic';
+    src: url('sftechn-webfont.woff2') format('woff2'),
+         url('sftechn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fuzzysockregular';
+    src: url('fuzzs___-webfont.woff2') format('woff2'),
+         url('fuzzs___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fuzzysockthin';
+    src: url('fuzzst__-webfont.woff2') format('woff2'),
+         url('fuzzst__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

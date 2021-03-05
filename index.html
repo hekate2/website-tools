@@ -2,16 +2,18 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="generators/fonts/fonts-stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
         <title>
             The Internet Graveyard
         </title>
         <style>
             body {
-                background-color: #000;
                 color: #fff;
                 font: 5pt 'quinquefiveregular';
                 text-shadow: 1px 1px black;
                 line-height: 2em;
+                color: #cecece;
+                background-image: url("graphics/background.jpg");
             }
             #envelope {
                 width: 800px;
@@ -24,23 +26,23 @@
                 margin-top: -250px;
             }
             #navbar {
-                width: 150px;
+                width: 20%;
                 float: left;
             }
             #content {
-                width: 628px;
+                width: calc(80% - 22px);
                 height: 400px;
                 float: right;
                 padding: 10px;
                 border-radius: 5px;
-                background: linear-gradient(#192023, #8e9da0);
+                background: linear-gradient(#2c3953, #000000);
             }
             #content, #navbar li {
-                border: 1px solid #86898a;
+                border: 1px solid #000;
                 box-shadow: inset #1e2628 0px 0px 10px;
             }
             #navbar li {
-                background: linear-gradient(#192023, #606b6d);
+                background: linear-gradient(#2c3953, #000000);
                 list-style: none;
                 border-right: none;
                 border-top-left-radius: 5px;
@@ -49,18 +51,37 @@
                 margin: 5px 0 5px 5px;
             }
             a {
-                color: #fff;
                 text-decoration: none;
+                color: #cecece;
+            }
+            h1 {
+                font-family: 'sf_technodelightbold_italic';
+                font-size: 30pt;
+                left: 150px;
+                top: -45px;
+                position: absolute;
+                color: #cbddf5;
+            }
+            h3 {
+                color: #b9c2dc;
+                background: linear-gradient(45deg, #566163, transparent);
+            }
+            .contentBar {
+                width: calc(50% - 10px);
+                padding: 5px;
             }
         </style>
     </head>
     <body>
         <div id="envelope">
+            <h1>
+                The Internet Graveyard
+            </h1>
             <div id="navbar">
                 <ul>
                     <li>
                         <a href="archive/backgrounds.html">
-                            Archives
+                            Backgrounds
                         </a>
                     </li>
                     <li>
@@ -69,21 +90,28 @@
                         </a>
                     </li>
                     <li>
-                        Tutorials
-                    </li>
-                    <li>
-                        About/Contact
+                        Contact
                     </li>
                 </ul>
             </div>
             <div id="content">
-                <h3>
-                    Latest News:
-                </h3>
-                <p>
-                    Welcome to the internet's graveyard- the hottest spot on the web for old graphics, html tutorials and general web 1.0 thingamagigs! Check out the <strong>archives</strong> for old graphics, the <strong>generators</strong> to make your own web-stuff, or the <strong>tutorials</strong> for some cool gadgets for your blog or website. Got ideas? My e-mail's in the <strong>about</strong> section.
-                </p>
-                
+                <div class="contentBar" style="float: left;">
+                    <h3>
+                        Latest News:
+                    </h3>
+                    03.04.2021
+                    <p>
+                        Welcome to the internet graveyard- the hottest spot on the web for old graphics, html tutorials and general web 1.0 thingamagigs! Check out the <strong>archives</strong> for old graphics, the <strong>generators</strong> to make your own web-stuff. Got ideas? My e-mail's in the <strong>about</strong> section.
+                    </p>
+                </div> 
+                <div class="contentBar" style="float: right">
+                    <h3>
+                        About
+                    </h3>
+                    <p>
+                        Following the shutdown of grsites.com, I decided to make an archive of web 1.0 graphics myself.  This archive is a work in progress, and I appreciate any links to old graphics and websites that you'd like to see here. 
+                    </p>
+                </div>
             </div>
         </div>
     </body>
