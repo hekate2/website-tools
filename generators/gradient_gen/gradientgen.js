@@ -6,6 +6,7 @@ $( document ).ready(function() {
   			var height = $('#height').val();
   			var gradient = $('input[name="grad"]:checked').siblings().css('background');
             
+            $('#envelope').draggable();
 		    // Method to make all background colors similar, then set the selected background
 		    function getBg() {
 		    	color = $('#color1').val();
@@ -71,7 +72,7 @@ $( document ).ready(function() {
 			})
 			// On mouse out
 			$('#product').on('mouseleave', function() {
-                $('body').css('background-image', "url('../../graphics/background.jpg')");
+                $('body').css('background', "#6369b1");
 			})
 
 			$('#submit').on('click', function() {

@@ -57,7 +57,7 @@ $( document ).ready(function() {
                 });
                 // On mouse out
                 $('canvas').on('mouseleave', function() {
-                    $('body').css('background', "#fff");
+                    $('body').css('background', "#6369b1");
                 });
                 $( "#setWidth" ).change(function() {
                     width = $("#setWidth").val();

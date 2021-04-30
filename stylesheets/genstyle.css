@@ -3,7 +3,7 @@ a {
     color: #fff;
 }
 body {
-    background-image: url("../graphics/background.jpg");
+    background: #6369b1;
     text-align: center;
 	-ms-overflow-style: none;
   	scrollbar-width: none;
@@ -24,7 +24,7 @@ button, input[type="file"], #submit, input[type="button"] {
     font: 5pt 'quinquefiveregular';
     padding: 5px;
     color: white;
-    background: linear-gradient(#2c3953, #000);
+    background: linear-gradient(#98a3dc, #6369b1);
     border: 1px solid #fff;
 }
 .example {
@@ -88,14 +88,14 @@ button, input[type="file"], #submit, input[type="button"] {
     padding: 2.5px;
 }
 #tabs li.active:after {
-    box-shadow: -2px 2px 0 #2c3953;
+    box-shadow: -2px 2px 0 #98a3dc;
 }
 #tabs li.active {
-    border-bottom-color: #2c3953;
+    border-bottom-color: #98a3dc;
     padding: 2.5px;
 }
 #tabs li.active:before {
-    box-shadow: 2px 2px 0 #2c3953;
+    box-shadow: 2px 2px 0 #98a3dc;
 }
 #tabs:after {
     position: absolute;
@@ -119,7 +119,7 @@ button, input[type="file"], #submit, input[type="button"] {
 #tabs li{
     border: 1px solid #000;
     border-bottom-color: #000;
-    background: linear-gradient(#455a82, #2c3953);
+    background: linear-gradient(#98a3dc, #6369b1);
     display: inline-block;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -127,18 +127,18 @@ button, input[type="file"], #submit, input[type="button"] {
     z-index: 10;
 }
 #tabs li.active {
-    background: linear-gradient(#5c729c, #2c3953);
+    background: linear-gradient(#c1caf7, #98a3dc);
     z-index: 30;
 }
 #tabs li:after {
     right: -6px;
     border-bottom-left-radius: 6px;
     border-width: 0 0 1px 1px;
-    box-shadow: -2px 2px 0 #2c3953;
+    box-shadow: -2px 2px 0 #6369b1;
     left: 100%;
 }
 #tabs li:before {
-    box-shadow: 2px 2px 0 #2c3953;
+    box-shadow: 2px 2px 0 #6369b1;
     border-bottom-right-radius: 6px;
     border-width: 0 1px 1px 0;
     left: -7px;
@@ -154,7 +154,7 @@ button, input[type="file"], #submit, input[type="button"] {
     background: blue;
     position: absolute;
     border-radius: 5px;
-    background: linear-gradient(#2c3953, #000000);;
+    background: linear-gradient(#98a3dc, #6369b1);
     border: 1px solid #000;
     z-index: 20;
 }
