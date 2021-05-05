@@ -2,7 +2,7 @@ $(document).ready(function() {
     var src_array = [];
     var counter = 0;
     var hasBeenPrev = false;
-    var color = $('.selected').attr('value');;
+    var color = $('.selected').attr('value');
     
     function readTxt() {
         jQuery.get('text_links/' + color + '.txt', function(data) {
